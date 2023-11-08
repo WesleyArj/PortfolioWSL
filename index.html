@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Google Fonts close -->
     <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -16,24 +16,37 @@
 
     <script src="menu.js" defer></script>
 
+    <style>
+        body{
+            background-image: url("backgrolndFullScreen.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            backdrop-filter: brightness(70%);
+        }
+    </style>
+    
+
 </head>
 <body>
+    
     <header>
         <div class="interface">
-            <div class="logo">
-                <img src="WSL logo.jpg" alt="Logo da Agência WSL">
+            
+            <div class="logo" id="Menu-Desktop">
+                <img src="logoOrig2.png" alt="Logo da Agência WSL" width="115px">
             </div><!--logo close-->
 
-            <nav class="Menu-Desktop">
+            <nav class="Menu-Desktop" >
                 <ul>
                     <li><a href="#inicio">Início</a></li>
-                    <li><a href="#especialidades">Especialidades</a></li>
                     <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
                     <li><a href="#projeto">Projetos</a></li>
                 </ul>
-            </nav>
+            </nav><!--Menu-Desktop close-->
+
             <div class="btn-contato">
-                <a href="#contato">
+                <a href="#email">
                     <button>Contato</button>
                 </a>
             </div><!--btn-contato close-->
@@ -50,8 +63,8 @@
                 <nav>
                     <ul>
                         <li><a href="#inicio">Início</a></li>
-                        <li><a href="#especialidades">Especialidades</a></li>
                         <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#especialidades">Especialidades</a></li>
                         <li><a href="#projeto">Projetos</a></li>
                         <li><a href="#contato">Contato</a></li>
                     </ul>
@@ -61,56 +74,32 @@
             <div class="ovelay-menu-mobile" id="ovelay-menu-mobile"></div>
 
         </div><!--interface close-->
-    </header>
+    </header><!--header close-->
 
     <main>
         <section class="Topo-Do-Site" id="inicio">
+            
             <div class="interface">
                 <div class="flex">
                     <div class="txt-topo-site">
-                        <h1>TRANSFORMANDO IDEIAS EM REALIDADE DIGITAL<samp>.</samp></h1>
+                        <h1>Wesley <samp>Araujo</samp>.</h1>
                         
-                        <p>Criatividade e inovaçOo andam lado a lado. Com uma combinaçOo única de design
-                            impactante, funcionalidade intuitiva e otimizaçdo para resultados, estou pronto(a)
-                            para criar a presença online dos seus sonhos.</p>
+                        <p>Desenvolvedor jr.</p>
 
-                        <div class="btn-contato">
-                            <a href="#contato">
-                                <button>Entre em contato</button>
-                            </a>
-                        </div>
+                        <div class="btn-social">
+                            <a href="https://instagram.com/wes_jack?igshid=NGVhN2U2NjQ0Yg%3D%3D&utm_source=qr"><button><i class="bi bi-instagram"></i></button></a>
+                            <a href="https://www.linkedin.com/in/wesley-araujo-a946bb281/"><button><i class="bi bi-linkedin"></i></button></a>
+                            <a href="https://github.com/WesleyArj"><button><i class="bi bi-github"></i></button></a>
+                        </div><!--btn-social close-->
+
                     </div><!--txt-topo-site close-->
                     <div class="img-topo-site">
-                        <img src="iIMG_4314_edited1.jpg" alt="imagem persona">
+                        <img src="logoOrig2.png" alt="imagem persona">
                     </div><!--img-topo-site close-->
                 </div><!--flex close-->
 
             </div> <!--interface close-->
         </section><!--Topo-Do-Site close-->
-
-        <section class="Especialidades" id="especialidades">
-            <div class="interface">
-                <h2 class="titulos">MINHAS <samp>ESPECIALIDADES.</samp></h2>
-                <div class="flex">
-                    <div class="special-box">
-                        <i class="bi bi-file-code-fill"></i>
-                        <h3>Wobsite</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, nulla rem dolore inventore delectus at.</p>
-                    </div><!--special-box close-->
-                    <div class="special-box">
-                        <i class="bi bi-cart3"></i>
-                        <h3>Loja Online</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, nulla rem dolore inventore delectus at.</p>
-                    </div><!--special-box close-->
-                    <div class="special-box">
-                        <i class="bi bi-threads"></i>
-                        <h3>Blog</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, nulla rem dolore inventore delectus at.</p>
-                    </div><!--special-box close-->
-                </div><!--flax close-->
-            </div><!--interface close-->
-
-        </section><!--Especialidades close-->
 
         <section class="sobre" id="sobre">
             <div class="interface">
@@ -119,28 +108,50 @@
                         <img src="IMG_4337.jpg" alt="img-aps">
                     </div><!--imagem-aps close-->
                     <div class="txt-aps">
-                        <h2>MUITO PRASER, <Samp>SOU WESLEY ARAÚJO.</Samp></h2>
-                        <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus odio delectus harum ad maiores eaque quasi aliquid, ullam ducimus corrupti error dicta esse at nostrum eveniet impedit qui, cum cupiditate!</P>
-                        <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, possimus deserunt molestiae, explicabo asperiores assumenda temporibus qui quod eius odit itaque sequi, vel aliquam in consequatur aperiam quidem tempora ipsam?</P>
+                        <h2>OLÁ A <Samp>TODOS,</Samp></h2>
+                        <P>Meu nome é Wesley Araujo, e embora eu esteja em uma recém-descorbeta proficinal, acredito que a tecnologia tem o poder de transformar o mundo. Sou um programador iniciante com paixão por codificar e um desejo incansável de aprender. Minhas principais ferramentas são linguagens como Java e MySQL e possua uma boa compreenção das ferramentas HTML, CSS e Python.</P>
+                        <P>Eu posso não ter um conhcimento tão vasto por inexperiência, mas acredito que o esforço e a paixão são armas poderosas por si só. Estou aqui para aprender, colaborar e criar soluções inovadoras. Juntos, podemos codificar o futuro, tornando-o mais acessível, eficiente e empolgante.</P>
 
-                        <div class="btn-social">
-                            <a href="https://instagram.com/wes_jack?igshid=NGVhN2U2NjQ0Yg%3D%3D&utm_source=qr"><button><i class="bi bi-instagram"></i></button></a>
-                            <a href="https://www.linkedin.com/in/wesley-araujo-a946bb281/"><button><i class="bi bi-linkedin"></i></button></a>
-                            <a href="https://github.com/WesleyArj"><button><i class="bi bi-github"></i></button></a>
-                        </div><!--btn-social close-->
+                        
                     </div><!--txt-aps close-->
                 </div><!--flex close-->
             </div><!--intreface close-->
 
         </section><!--Sobre close-->
 
+        <section class="Especialidades" id="especialidades">
+            <div class="interface">
+                <h2 class="titulos">MINHAS <samp>ESPECIALIDADES.</samp></h2>
+                <div class="flex">
+                    <div class="special-box">
+                        <i class="bi bi-filetype-java"></i>
+                        <h3>JAVA</h3>
+                        <p>Linguagem de programação de alto nível, orientada a objetos e amplamente usada para desenvolvimento de aplicativos de software, especialmente em ambientes web e móveis. É conhecida por sua portabilidade, segurança e ampla biblioteca padrão.</p>
+                    </div><!--special-box close-->
+                    <div class="special-box">
+                        <i class="bi bi-database"></i>
+                        <h3>MySQL</h3>
+                        <p>Sistema de gerenciamento de banco de dados relacional (RDBMS) amplamente utilizado, conhecido por armazenar e recuperar dados de maneira eficiente.</p>
+                    </div><!--special-box close-->
+                    <div class="special-box">
+                        <i class="bi bi-filetype-html"></i>
+                        <h3>HTML</h3>
+                        <p>Linguagem de marcação usada para criar documentos da web. Ela define a estrutura e o conteúdo de uma página, usando tags para formatar e organizar elementos, como texto, imagens e links.</p>
+                    </div><!--special-box close-->
+                </div><!--flax close-->
+            </div><!--interface close-->
+
+        </section><!--Especialidades close-->
+
+        
+
         <section class="portfolio" id="projeto">
             <div class="interface">
                 <h2 class="titulos">MEU <samp>PORTFÓLIO.</samp></h2>
                 <div class="flex">
-                    <div class="img-port" style="background-image: url(Elifanny.jpg);"><div class="overlay">EM BREVE</div></div>
-                    <div class="img-port" style="background-image: url(Elifanny.jpg);"><div class="overlay">EM BREVE</div></div>
-                    <div class="img-port" style="background-image: url(Elifanny.jpg);"><div class="overlay">EM BREVE</div></div>
+                    <div class="img-port" style="background-image: url(EmConstrucao.png);"><div class="overlay">EM BREVE</div></div>
+                    <div class="img-port" style="background-image: url(EmConstrucao.png);"><div class="overlay">EM BREVE</div></div>
+                    <div class="img-port" style="background-image: url(EmConstrucao.png);"><div class="overlay">EM BREVE</div></div>
 
                 </div><!--flex close-->
 
@@ -148,6 +159,7 @@
 
         </section><!--portfolio close-->
 
+    <!-- 
         <section class="formulario" id="contato">
             <div class="interface">
                 <h2 class="titulos">FALA <samp>COMIGO.</samp></h2>
@@ -160,17 +172,17 @@
 
                     <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
                 </form>
-            </div><!--interface close-->
-
-        </section><!--formulario close-->
+            </div><!-interface close ->
+            
+        </section><!-formulario close-->
     </main>
 
     <footer>
         <div class="interface">
             <div class="lineFooter">
                 <div class="flex">
-                    <div class="logoFooter">
-                        <img src="WSL logo.jpg" alt="">
+                    <div class="logoFooter" id="email">
+                        <a href="#Menu-Desktop"><button><img src="logoOrig.png" alt=""></button></a>
                     </div><!--logoFooter close-->
                     <div class="btn-social">
                         <a href="https://instagram.com/wes_jack?igshid=NGVhN2U2NjQ0Yg%3D%3D&utm_source=qr"><button><i class="bi bi-instagram"></i></button></a>
