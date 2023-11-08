@@ -494,7 +494,7 @@ footer .lineFooter p a{
     /* Portfólio */
     section.portfolio{
         padding: 80px 8%;
-        box-shadow: 0 0 40px 10px rgba(165, 42, 42, 0.24);
+        box-shadow: 0 0 40px 10px rgba(173, 173, 173, 0.164);
     }
     section.portfolio .flex{
         gap: 30px;
